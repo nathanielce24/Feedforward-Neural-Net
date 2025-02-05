@@ -70,11 +70,11 @@ class NeuralNet:
 
 
     def train(self, input, expected, epochs):
-        for epoch in range(epochs):
-            predictions = self.forward_pass(input)
-            loss = self.cross_entropy_loss(predictions, expected)
+        for epoch in range(epochs):            
+            predictions = self.forward_pass(input)   #forward pass to get current models predictions
+            loss = self.cross_entropy_loss(predictions, expected)  #calculate loss
             print(f"EPOCH {epoch} - Loss: {loss:.4f}")
-            self.back_propagate(expected)
+            self.back_propagate(expected)   #update model based on expected values
 
     def mean_squared_error_loss(self,predictions, expected):
       return np.mean((expected - predictions) ** 2)
@@ -84,10 +84,10 @@ class NeuralNet:
 
 
     def evaluate(self, input, expected):
-        predictions = self.forward_pass(input)
-        predicted_classes = np.argmax(predictions, axis=1)
-        actual_classes = np.argmax(expected, axis=1)
-        accuracy = np.mean(predicted_classes == actual_classes)
+        predictions = self.forward_pass(input)  
+        predicted_classes = np.argmax(predictions, axis=1) #Maximum probability class is models prediction
+        actual_classes = np.argmax(expected, axis=1)  #Actual class is one hot encoded
+        accuracy = np.mean(predicted_classes == actual_classes)  #How often actual class = predicted class
         return accuracy
     
     def save_model(self):

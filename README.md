@@ -23,4 +23,6 @@ Train:
 * Creates and trains network given architecture, epochs, and learning rate.
 
 ## Training Files:
-TrainFashion: Trains a model to differentiate between 10 different articles of clothing
+**TrainPneumonia:** Trains a model on the PneumoniaMNIST dataset to identify Pneumonia in pediactric X-Rays. I can usually achieve around 80% accuracy.
+**Train Organ:** Trains a model on  the OrganCMNIST dataset to identify 11 organs. I can usually achieve around 70% accuracy.
+**TrainBreastCancer:** Trains a model on the BreastMNIST dataset to identify breast cancer in ultrasounds. I can usually achieve around 80% accuracy.

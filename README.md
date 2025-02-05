@@ -1,4 +1,4 @@
-# **Feedforward Dense Neural Network for Handwritten Digit Recognition**
+# **Feedforward Dense Neural Network for Grayscale Image Recognition**
 
 This is my first attempt at building a neural network from the ground up. In it's current state it's not particularly optimized or efficient, but with a very low learning rate and enough epochs you can achieve very accurate results. Currently a new model must be trained every time, but I intend to implent save/load functionality in the near future.
 

@@ -1,12 +1,12 @@
-from src.DenseLayer import DenseLayer
-from src.NeuralNet import NeuralNet
+from DenseLayer import DenseLayer
+from NeuralNet import NeuralNet
 import numpy as np
-from tensorflow.keras.datasets import mnist
+from tensorflow.keras.datasets import fashion_mnist
 from tensorflow.keras.utils import to_categorical
 
 #Training Example
 
-(X_train, y_train), (X_test, y_test) = mnist.load_data()
+(X_train, y_train), (X_test, y_test) = fashion_mnist.load_data()
 X_train = X_train.astype(np.float32) / 255.0
 X_test = X_test.astype(np.float32) / 255.0
 X_train = X_train.reshape(X_train.shape[0], 784)

@@ -1,7 +1,7 @@
-from src.DenseLayer import DenseLayer
+from DenseLayer import DenseLayer
 import random
 import numpy as np
-from src.DenseLayer import DenseLayer
+from  DenseLayer import DenseLayer
 
 
 class NeuralNet:

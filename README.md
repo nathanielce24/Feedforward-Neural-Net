@@ -27,3 +27,7 @@ Train:
 * **TrainPneumonia:** Trains a model on the PneumoniaMNIST dataset to identify Pneumonia in pediactric X-Rays (≈ 80% Accuracy).
 * **Train Organ:** Trains a model on  the OrganCMNIST dataset to identify 11 organs (≈70% Accuracy).
 * **TrainBreastCancer:** Trains a model on the BreastMNIST dataset to identify breast cancer in ultrasounds (≈80% Accuracy).
+
+![alt text](https://github.com/nathanielce24/Feedforward-Neural-Net/blob/main/Flowcharts/DenseLayer-Class.png?raw=true)
+![alt text](https://github.com/nathanielce24/Feedforward-Neural-Net/blob/main/Flowcharts/NeuralNet-Class.png?raw=true)
+![alt text](https://github.com/nathanielce24/Feedforward-Neural-Net/blob/main/Flowcharts/Training-Process.png?raw=true)

@@ -1,12 +1,10 @@
-
-#Example of a training process that should yield a model with >95% accuracy
-
 from DenseLayer import DenseLayer
 from NeuralNet import NeuralNet
 import numpy as np
 from tensorflow.keras.datasets import mnist
 from tensorflow.keras.utils import to_categorical
 
+#Example of a training process that should yield a model with >95% accuracy
 
 (X_train, y_train), (X_test, y_test) = mnist.load_data()
 X_train = X_train.astype(np.float32) / 255.0

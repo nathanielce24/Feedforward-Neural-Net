@@ -3,6 +3,7 @@ import numpy as np
 import math 
 import numpy as np
 
+
 class DenseLayer:
     def __init__(self, input_size, layer_size, activation_function):
         self.input_size = input_size

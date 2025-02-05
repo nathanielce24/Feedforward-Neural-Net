@@ -1,8 +1,8 @@
-
 from DenseLayer import DenseLayer
 import random
 import numpy as np
 from DenseLayer import DenseLayer
+
 
 class NeuralNet:
     def __init__(self, architecture, activation_function, loss_function, learning_rate): #Architecure is array of neuron counts ex. [128,64,10]

@@ -1,9 +1,10 @@
 # **Feedforward Dense Neural Network for Grayscale Image Classification**
 
-This is my first attempt at building a neural network from the ground up. In it's current state it's not particularly optimized or efficient, but with a very low learning rate and enough epochs you can achieve very accurate results. 
+This is my first attempt at building a neural network from the ground up. In it's current state it's not particularly optimized or efficient, but with a very low learning rate and enough epochs you can achieve accurate results. 
 
 How to Train a Model:
 * Download src
+* Pip install medmnist package for datasets
 * Modify epochs and learning rate in one of the provided training files
 * Run training file, and see how accurate the model is.
 

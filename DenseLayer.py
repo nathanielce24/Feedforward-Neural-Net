@@ -1,49 +1,59 @@
 import random
 import numpy as np
 import math 
+import numpy as np
 
 class DenseLayer:
-     def __init__ (self, input_size, layer_size, activation_function):
+    def __init__(self, input_size, layer_size, activation_function):
         self.input_size = input_size
         self.layer_size = layer_size
         self.activation_function = activation_function
-        
         self.weights = self.initialize_weights()
-        self.biases = np.zeros((1,layer_size))             #2d row vector or biases, initially 0
-        
-     
-     def set_weights(self, weights):
-        self.weights = weights
+        self.biases = np.zeros((1, layer_size))
 
-     def set_biases(self, biases):
-        self.biases = biases
+    def initialize_weights(self):
+       # return np.random.randn(self.input_size, self.layer_size) * 0.01  # Small random values
+        return np.random.randn(self.input_size, self.layer_size) * np.sqrt(2/self.layer_size) #HEinitialization
 
-     def initialize_weights(self):
-        return np.random.rand(self.input_size, self.layer_size)  * 0.01    #Columns are neurons, rown are weights, initialized randomly
-     
-     def calculate_weighted_sums(self, inputs):
-        weighted_sums = np.dot(inputs, self.weights) + self.biases   #Dot products of input activations and weights, + biases
-        #print(weighted_sums)
-        return weighted_sums
-     
-     def forward(self, inputs):
-         outputs = self.sigmoid(self.calculate_weighted_sums(inputs))     #apply activation function to get the inputs for the next layer
-         #print(outputs)
-         return outputs
-        
-     def back_pass(self, inputs, expected_activation):  
-        activation = self.forward(inputs)
-        print(activation)
-        weighted_sums_gradient = (activation - expected_activation) * self.sigmoid_derivative(self.calculate_weighted_sums(inputs))  #how far weighted sums are from loss = 0
-        #print(weighted_sums_gradient)
-        weight_gradients = np.dot(inputs.T, weighted_sums_gradient)   #how far weights are from loss = 0
-        bias_gradients = np.sum(weighted_sums_gradient, axis=0, keepdims=True)  #how far biases are from loss = 0
-        return weight_gradients, bias_gradients
-     
-     def sigmoid(self, x):
-        return 1 / (1 + np.exp(-x))
+    def change_weights(self, gradient):     #Subtracts a provided gradient from weights
+        self.weights -= gradient
+
+    def change_biases(self, gradient):      #Subtracts a provided gradientfrom biases
+        self.biases -= gradient 
+
+    def calculate_weighted_sums(self, inputs):
+        return np.dot(inputs, self.weights) + self.biases
+
+    def forward(self, inputs):
+        return self.activation_function(self.calculate_weighted_sums(inputs)) 
+
+    def back_pass(self, weighted_sums, prev_activations, activations, expected_activation=None, prev_gradient=None, is_output=False):  
+        if is_output:  
+            weighted_sums_gradient = activations - expected_activation #weighted sum gradient for final layer, softmax activation instead of sigmoid
+        else:
+            weighted_sums_gradient = prev_gradient * self.sigmoid_derivative(weighted_sums) #
+
     
-     def sigmoid_derivative(self, x):
-        return self.sigmoid(x) - (1-self.sigmoid(x))
-   
-     
+        weight_gradients = np.dot(prev_activations.T, weighted_sums_gradient)
+        bias_gradients = np.sum(weighted_sums_gradient, axis=0, keepdims=True)
+
+        return weight_gradients, bias_gradients, weighted_sums_gradient
+
+
+
+    @staticmethod
+    def sigmoid(x):
+        return 1 / (1 + np.exp(-x))
+        
+
+    @staticmethod
+    def sigmoid_derivative(x):         #sigmoid derivative used to find how much activation changes with respect to weighted sum
+        sigmoid= DenseLayer.sigmoid(x)
+        return sigmoid * (1 - sigmoid)
+        
+
+    @staticmethod
+    def softmax(x):        #takes weighted sums and converts to probabilities
+        exp_x = np.exp(x - np.max(x, axis=1, keepdims=True))  
+        return exp_x / np.sum(exp_x, axis=1, keepdims=True)
+

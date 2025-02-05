@@ -5,7 +5,7 @@ This is my first attempt at building a neural network from the ground up. In it'
 How to Train a Model:
 * Download src
 * Pip install medmnist package for datasets
-* Modify epochs and learning rate in one of the provided training files
+* Modify 'epochs' (technically iterations) and learning rate in one of the provided training files
 * Run training file, and see how accurate the model is.
 
 ## Technical Overview

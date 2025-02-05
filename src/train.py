@@ -1,5 +1,5 @@
-from DenseLayer import DenseLayer
-from NeuralNet import NeuralNet
+from src.DenseLayer import DenseLayer
+from src.NeuralNet import NeuralNet
 import numpy as np
 from tensorflow.keras.datasets import mnist
 from tensorflow.keras.utils import to_categorical

@@ -1,6 +1,26 @@
-This is my first attempt at a feedforward dense neural network to recognize handwritten digits from the MNIST data set. 
+# **Feedforward Dense Neural Network for Grayscale Image Classification**
 
-It's not very optimized in it's current state, but with a low enough learning rate and enough epochs you can get very high accuracy.
+This is my first attempt at building a neural network from the ground up. In it's current state it's not particularly optimized or efficient, but with a very low learning rate and enough epochs you can achieve very accurate results. 
 
-In the future I intend to implent Save/Load model functionality, expariment with diffent activation, loss, and weight initialization functions, and improve documentation.
+How to Train a Model:
+* Download src
+* Modify epochs and learning rate in one of the provided training files
+* Run training file, and see how accurate the model is.
 
+## Technical Overview
+DenseLayer:
+* Represents the connections between two layers
+* Initializes weights and biases
+* Handels forwardpropogation and backpropogation for a single layer
+
+NeuralNet:
+* Creates an array of DenseLayer objects given network architecture
+* Handels forward propogation and backpropogation for the entire network
+* Trains and evaluates the model
+
+Train:
+* Downloads and preprocesses mnist dataset
+* Creates and trains network given architecture, epochs, and learning rate.
+
+## Training Files:
+TrainFashion: Trains a model to differentiate between 10 different articles of clothing

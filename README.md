@@ -1,6 +1,6 @@
 # **Feedforward Dense Neural Network for Grayscale Image Classification**
 
-This is my first attempt at building a neural network from the ground up. In it's current state it's not particularly optimized or efficient, but with a very low learning rate and enough epochs you can achieve very accurate results. Currently a new model must be trained every time, but I intend to implent save/load functionality in the near future.
+This is my first attempt at building a neural network from the ground up. In it's current state it's not particularly optimized or efficient, but with a very low learning rate and enough epochs you can achieve very accurate results. 
 
 How to Train a Model:
 * Download src
@@ -22,3 +22,5 @@ Train:
 * Downloads and preprocesses mnist dataset
 * Creates and trains network given architecture, epochs, and learning rate.
 
+## Training Files:
+TrainFashion: Trains a model to differentiate between 10 different articles of clothing

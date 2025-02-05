@@ -2,10 +2,10 @@
 
 This is my first attempt at building a neural network from the ground up. In it's current state it's not particularly optimized or efficient, but with a very low learning rate and enough epochs you can achieve very accurate results. Currently a new model must be trained every time, but I intend to implent save/load functionality in the near future.
 
-How to Train a Model:
+How to Train Your own Model:
 * Download src file
-* Modify epochs and learning rate in train.py
-* Run train.py, and see how accurate the model is.
+* Modify epochs and learning rate in one of the provided training files
+* Run training file, and see how accurate the model is.
 
 ## Technical Overview
 DenseLayer:

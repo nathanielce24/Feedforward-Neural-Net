@@ -6,7 +6,7 @@ This is a feedforwad, fully connected neural network that I built from the groun
 * Download src
 * Pip install medmnist package for datasets
 * Modify 'epochs' (technically iterations) and learning rate in one of the provided training files
-* Run training file, and see how accurate the model is.
+* Run the training file, and watch loss decrease over the iterations.
 
 ## Technical Overview
 DenseLayer:

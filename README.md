@@ -28,7 +28,7 @@ Train:
 ## Training Files:
 **TrainPneumonia:** 
   * **Dataset:** PneumoniaMNIST
-  * **Goal:** Identify pneumonia in pediactric X-rays
+  * **Goal:** Identify pneumonia in pediactric X-Rays
   * **Accuracy:** ≈86%
   
 **TrainOrgan:**
@@ -47,6 +47,7 @@ Note that, while these results are better than random (and above average for thi
 ##
 ##
 ![alt text](https://github.com/nathanielce24/Feedforward-Neural-Net/blob/main/Flowcharts/PneumImg.png?raw=true)
+Healthy vs. Pneumonia X-Ray
 ## 
 ##
 ![alt text](https://github.com/nathanielce24/Feedforward-Neural-Net/blob/main/Flowcharts/DenseLayer.png?raw=true)

@@ -28,7 +28,7 @@ Train:
 * **TrainOrgan:** Trains a model on  the OrganCMNIST dataset to classify 11 different organs in abdominal CT scans (≈70% Accuracy).
 * **TrainBreastCancer:** Trains a model on the BreastMNIST dataset to identify breast cancer in ultrasounds (≈82% Accuracy).
 
-Note that while these results are certaintly better than random (and above average for this architecture), the models success at binary classification is likely exagerated due to class imbalences in the data that cause the network to overvalue false negatives.
+Note that while these results are better than random (and above average for this architecture), the models success at binary classification is likely exagerated due to class imbalences in the data that cause the network to overvalue false negatives.
 
 ## 
 ![alt text](https://github.com/nathanielce24/Feedforward-Neural-Net/blob/main/Flowcharts/DenseLayer.png?raw=true)

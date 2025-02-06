@@ -47,7 +47,8 @@ Note that, while these results are better than random (and above average for thi
 ##
 ##
 ![alt text](https://github.com/nathanielce24/Feedforward-Neural-Net/blob/main/Flowcharts/PneumImg.png?raw=true)
-Healthy vs. Pneumonia X-Ray
+
+Example of X-Rays from the PneumoniaMNIST dataset
 ## 
 ##
 ![alt text](https://github.com/nathanielce24/Feedforward-Neural-Net/blob/main/Flowcharts/DenseLayer.png?raw=true)

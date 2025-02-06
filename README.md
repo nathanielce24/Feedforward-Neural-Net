@@ -1,4 +1,4 @@
-# **Feedforward Dense Neural Network for Grayscale (Biomedical) Image Classification**
+# **Feedforward Dense Neural Network for Grayscale Biomedical Image Classification**
 
 This is a feedforward, fully connected neural network built from the ground up. By tweaking the learning rate and iterations, I've been able to achieve accurate results for biomedical image classifications from MNIST datasets. 
 

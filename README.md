@@ -28,7 +28,7 @@ Train:
 * **Train Organ:** Trains a model on  the OrganCMNIST dataset to identify 11 organs (≈70% Accuracy).
 * **TrainBreastCancer:** Trains a model on the BreastMNIST dataset to identify breast cancer in ultrasounds (≈82% Accuracy).
 
-Note that while these resukts are certaintly better than guessing, the class imbalancees in the data sets may cause a large amount of false negatives that aren't captured in the accuracy.
+Note that while these results are certaintly better than guessing (and above average for this architecture), class imbalancees in the data may cause a large amount of false negatives that aren't captured in the accuracy (for pneumonia and breast-cancer.)
 
 ## 
 ![alt text](https://github.com/nathanielce24/Feedforward-Neural-Net/blob/main/Flowcharts/DenseLayer-Class.png?raw=true)

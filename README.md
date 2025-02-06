@@ -25,7 +25,7 @@ Train:
 
 ## Training Files:
 * **TrainPneumonia:** Trains a model on the PneumoniaMNIST dataset to identify Pneumonia in pediactric X-Rays (≈ 86% Accuracy).
-* **TrainOrgan:** Trains a model on  the OrganCMNIST dataset to classify 111 different organs in abdominal ct scans (≈70% Accuracy).
+* **TrainOrgan:** Trains a model on  the OrganCMNIST dataset to classify 11 different organs in abdominal CT scans (≈70% Accuracy).
 * **TrainBreastCancer:** Trains a model on the BreastMNIST dataset to identify breast cancer in ultrasounds (≈82% Accuracy).
 
 Note that while these results are certaintly better than guessing (and above average for this architecture), class imbalancees in the data may cause a large amount of false negatives that aren't captured in the accuracy (for pneumonia and breast-cancer.)

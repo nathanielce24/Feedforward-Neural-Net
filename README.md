@@ -2,7 +2,7 @@
 
 This is a feedforwad, fully connected neural network that I built from the ground up. By tweaking the learning rate and iterations, I have been able to achieve above average results for biomedical image classification from MNIST datasets. Currently a new model has to be trained every time, but I plan to implement save/load functionality in the near future.
 
-# How to Train a Model:
+## How to Train a Model:
 * Download src
 * Pip install medmnist package for datasets
 * Modify 'epochs' (technically iterations) and learning rate in one of the provided training files

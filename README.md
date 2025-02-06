@@ -1,5 +1,6 @@
 # **Feedforward Dense Neural Network for Grayscale (Biomedical) Image Classification**
 
+
 This is a feedforwad, fully connected neural network that I built from the ground up. By tweaking the learning rate and iterations, I have been able to achieve accurate results for biomedical image classification from MNIST datasets. Currently a new model has to be trained every time, but I plan to implement save/load functionality in the near future.
 
 ## How to Train a Model:
@@ -28,9 +29,15 @@ Train:
 * **TrainOrgan:** Trains a model on  the OrganCMNIST dataset to classify 11 different organs in abdominal CT scans (≈70% Accuracy).
 * **TrainBreastCancer:** Trains a model on the BreastMNIST dataset to identify breast cancer in ultrasounds (≈82% Accuracy).
 
-Note that while these results are better than random (and above average for this architecture), the models success at binary classification is likely exagerated due to class imbalences in the data that cause the network to overvalue false negatives.
 
+
+Note that while these results are better than random (and above average for this architecture), the models success at binary classification is likely exagerated due to class imbalences in the data that cause the network to overvalue false negatives.
+##
+##
+![alt text](https://github.com/nathanielce24/Feedforward-Neural-Net/blob/main/Flowcharts/PneumImg.png?raw=true)
 ## 
+##
 ![alt text](https://github.com/nathanielce24/Feedforward-Neural-Net/blob/main/Flowcharts/DenseLayer.png?raw=true)
 ![alt text](https://github.com/nathanielce24/Feedforward-Neural-Net/blob/main/Flowcharts/NeuralNet-Class.png?raw=true)
 ![alt text](https://github.com/nathanielce24/Feedforward-Neural-Net/blob/main/Flowcharts/Training-Process.png?raw=true)
+

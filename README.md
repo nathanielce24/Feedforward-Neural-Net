@@ -12,7 +12,7 @@ While a convolutional neural network would undoubtedly perform better, I wanted 
 
 ## Technical Overview
 DenseLayer:
-* Represents the connections between two layers
+* Represents the connections between two layers of neurons
 * Initializes weights and biases
 * Handles forward-propagation and back-propagation for a single layer
 

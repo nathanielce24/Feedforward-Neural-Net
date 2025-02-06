@@ -1,4 +1,4 @@
-# **Feedforward Dense Neural Network for Grayscale Image Classification**
+# **Feedforward Dense Neural Network for Grayscale (Biomedical) Image Classification**
 
 This is my first attempt at building a neural network from the ground up. In it's current state it's not very optimized or efficient, but with a very low learning rate and enough iterations you can achieve accurate results. 
 

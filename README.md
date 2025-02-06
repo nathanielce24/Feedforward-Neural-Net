@@ -1,7 +1,7 @@
 # **Feedforward Dense Neural Network for Grayscale (Biomedical) Image Classification**
 
 
-This is a feedforwad, fully connected neural network that I built from the ground up. By tweaking the learning rate and iterations, I have been able to achieve accurate results for biomedical image classification from MNIST datasets. Currently a new model has to be trained every time, but I plan to implement save/load functionality in the near future.
+This is a feedforwad, fully connected neural network that I built from the ground up. By tweaking the learning rate and iterations, I have been able to achieve accurate results for biomedical image classification from MNIST datasets. Currently a new model must be trained every time, but I plan to implement save/load functionality in the near future.
 
 ## How to Train a Model:
 * Download src

@@ -31,6 +31,6 @@ Train:
 Note that while these results are certaintly better than guessing (and above average for this architecture), class imbalancees in the data may cause a large amount of false negatives that aren't captured in the accuracy (for pneumonia and breast-cancer.)
 
 ## 
-![alt text](https://github.com/nathanielce24/Feedforward-Neural-Net/blob/main/Flowcharts/DenseLayer-Class.png?raw=true)
+![alt text](https://github.com/nathanielce24/Feedforward-Neural-Net/blob/main/Flowcharts/DenseLayer.png?raw=true)
 ![alt text](https://github.com/nathanielce24/Feedforward-Neural-Net/blob/main/Flowcharts/NeuralNet-Class.png?raw=true)
 ![alt text](https://github.com/nathanielce24/Feedforward-Neural-Net/blob/main/Flowcharts/Training-Process.png?raw=true)

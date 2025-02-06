@@ -31,7 +31,7 @@ Train:
 
 
 
-Note that while these results are better than random (and above average for this architecture), the models success at binary classification is likely exagerated due to class imbalences in the data that cause the network to overvalue false negatives.
+Note that, while these results are better than random (and above average for this architecture), the models success at binary classification is likely exagerated due to class imbalences in the data that cause the network to overvalue false negatives.
 ##
 ##
 ![alt text](https://github.com/nathanielce24/Feedforward-Neural-Net/blob/main/Flowcharts/PneumImg.png?raw=true)

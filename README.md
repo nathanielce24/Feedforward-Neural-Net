@@ -1,7 +1,6 @@
 # **Feedforward Dense Neural Network for Grayscale (Biomedical) Image Classification**
 
-This is my first attempt at building a neural network from the ground up. In it's current state it's not very optimized or efficient, but with a very low learning rate and enough iterations you can achieve accurate results. 
-
+This is a feedforwad, fully connected neural network that I built from the ground up. While it's not very optimized in it's current state, I have been able to achieve above average results for biomedical image classification from MNIST datasets. Currently a new model has to be trained every time, but I plan to implement save/load functionality in the near future.
 How to Train a Model:
 * Download src
 * Pip install medmnist package for datasets

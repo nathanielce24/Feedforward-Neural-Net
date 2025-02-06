@@ -24,11 +24,11 @@ Train:
 * Creates and trains network given architecture, epochs, and learning rate.
 
 ## Training Files:
-* **TrainPneumonia:** Trains a model on the PneumoniaMNIST dataset to identify Pneumonia in pediactric X-Rays (≈ 86% Accuracy).
+* **TrainPneumonia:** Trains a model on the PneumoniaMNIST dataset to identify Pneumonia in pediactric X-Rays (≈86% Accuracy).
 * **TrainOrgan:** Trains a model on  the OrganCMNIST dataset to classify 11 different organs in abdominal CT scans (≈70% Accuracy).
 * **TrainBreastCancer:** Trains a model on the BreastMNIST dataset to identify breast cancer in ultrasounds (≈82% Accuracy).
 
-Note that while these results are certaintly better than random (and above average for this architecture), the true effectivness of these models may be exagerated due to class imbalences in the data
+Note that while these results are certaintly better than random (and above average for this architecture), the models success at binary classification is likely exagerated due to class imbalences in the data that cause the network to overvalue false negatives.
 
 ## 
 ![alt text](https://github.com/nathanielce24/Feedforward-Neural-Net/blob/main/Flowcharts/DenseLayer.png?raw=true)

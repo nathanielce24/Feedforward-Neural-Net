@@ -24,7 +24,7 @@ Train:
 * Creates and trains network given architecture, epochs, and learning rate.
 
 ## Training Files:
-* **TrainPneumonia:** Trains a model on the PneumoniaMNIST dataset to identify Pneumonia in pediactric X-Rays (≈ 82% Accuracy).
+* **TrainPneumonia:** Trains a model on the PneumoniaMNIST dataset to identify Pneumonia in pediactric X-Rays (≈ 86% Accuracy).
 * **Train Organ:** Trains a model on  the OrganCMNIST dataset to identify 11 organs (≈70% Accuracy).
 * **TrainBreastCancer:** Trains a model on the BreastMNIST dataset to identify breast cancer in ultrasounds (≈82% Accuracy).
 

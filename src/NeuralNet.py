@@ -73,7 +73,7 @@ class NeuralNet:
         for epoch in range(epochs):            
             predictions = self.forward_pass(input)   #forward pass to get current models predictions
             loss = self.cross_entropy_loss(predictions, expected)  #calculate loss
-            print(f"EPOCH {epoch} - Loss: {loss:.4f}")
+            print(f"ITERATION {epoch} - Loss: {loss:.4f}")
             self.back_propagate(expected)   #update model based on expected values
 
     def mean_squared_error_loss(self,predictions, expected):

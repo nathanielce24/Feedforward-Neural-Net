@@ -18,7 +18,7 @@ DenseLayer:
 
 NeuralNet:
 * Creates an array of DenseLayer objects given network architecture
-* Handles forward-propogation and back-propogation for the entire network
+* Handles forward-propagation and back-propagation for the entire network
 * Trains and evaluates the model
 
 Train:

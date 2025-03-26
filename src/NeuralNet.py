@@ -1,7 +1,6 @@
 from DenseLayer import DenseLayer
 import random
 import numpy as np
-from  DenseLayer import DenseLayer
 
 
 class NeuralNet:
